@@ -3,9 +3,6 @@
       <div class="col-lg-12">
         <div class="row">
           <nav class="header navbar navbar-expand-lg fixed-top navbar-dark " id="topNav">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
             <a class="navbar-brand" href="/app">Daniel Peterson</a>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
@@ -14,8 +11,7 @@
               </ul>
             </div>
             <ul class="nav justify-content-end">
-              <li class="nav-item"> <a class="nav-link" id="search-icon" href="/app/search"><i class="fa fa-search" aria-hidden="true"></i></a> </li>
-              <li class="nav-item"> <input class="nav-link switch" id="theme-toggle" onclick="modeSwitcher() " type="checkbox" name="checkbox"> </li>
+              <li class="nav-item"> <input class="nav-link switch" id="theme-toggle" (change)="modeSwitcher()" [(ngModel)]="isChecked" type="checkbox" name="checkbox"> </li>
           </ul>
         </nav>
       </div>

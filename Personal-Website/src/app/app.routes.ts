@@ -21,6 +21,10 @@ export const AppRoutes: Routes = [
       {
         path: 'about',
         loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
+      },
+      {
+        path: 'blog',
+        loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)
       }
     ]
   },
