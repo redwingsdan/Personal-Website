@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-
+  years = new Date().getFullYear() - 2016;
+  skills = ['Angular', 'Java', 'PostgreSQL'];
 }
