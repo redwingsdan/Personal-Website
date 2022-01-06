@@ -8,6 +8,8 @@
 
 .nav {
   float: right;
+  display: flex;
+  margin-right: 30px;
   li {
     text-decoration: none;
     display: block;
@@ -15,7 +17,18 @@
 }
 
 .icons {
-
+  .nav-item {
+    margin-right: 5px;
+    padding: 3px 5px;
+    border-radius: 30%;
+    svg {
+      fill:darken(#f8ab00, 15%);
+    }
+    &:hover{
+      opacity: 1;
+      background-color: rgba(240,171,0,.2);
+    }
+  }
 }
 
 .navbar-nav {
