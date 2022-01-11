@@ -59,4 +59,8 @@ export class HeaderComponent {
       sessionStorage.setItem('theme', 'dark');
     }
   }
+
+  downloadResume() {
+    window.open("assets/pdfs/resume.pdf");
+  }
 }
