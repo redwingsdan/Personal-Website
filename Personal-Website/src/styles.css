@@ -104,3 +104,19 @@ body {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.personal-info-container, .skills-container, .projects-container{
+  background-color: var(--box-background-color);
+}
+
+.fit-content .mat-grid-tile, .mat-figure {
+  height: fit-content !important;
+}
+
+.fixed-top {
+  background-color: var(--main-background-color) !important;
+}
+
+.navbar-brand:hover {
+  color: var(--highlight-color) !important;
+}
